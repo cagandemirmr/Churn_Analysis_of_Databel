@@ -113,20 +113,46 @@ In terms of investigating churn reasons, pivot table from Customer Worksheet is 
 
 ### Churn Competitor Preferences
 
-In order to find why customers choose other companies, Competitor analysis is made and only top 4 reasons is choosed.
+In order to find why customers choose other companies, Competitor analysis is made and only top 4 reasons is choosed which are better devices,beter offer,higher download data and offered more data.
 ![image](https://github.com/user-attachments/assets/26e7d250-92cb-4f78-9b59-496d849d66ea)
 
-## Examining Churn Pattern
-
-## Consumption Data Based on Data Plan
+### Examining Churn Pattern
 
 Next, to make investigation one step further, i examine consumption of data based on Data plan by using pivot table.
 
 ![image](https://github.com/user-attachments/assets/a42ba6c6-b18e-405a-a803-6d713d0afcb7)
 
-## Age 
+### Age 
 
-Also,I investigate age 
+In age,first of all i create new column by 3 categories base on their age. If someone's age below 30, ıt is labelled as "Under 30",above 65 is labelled as "Senior" and between 30 and 65 Labelled as "Other" in Demographics column in Aggregate worksheet. I use If function to create labels.In the end, pivot table indicates that most of churn occures in "Senior".
+
+![image](https://github.com/user-attachments/assets/f8b746cb-8941-48bf-b6a8-60a82bede22c)
+![image](https://github.com/user-attachments/assets/6cc48751-2cfd-49b0-84e0-1e5d4dcaa051)
+
+Based on first information, i grooped ages by 10 years range by using pivot table.In the end, pivot table showed the most churned age range is 79-88 years old.
+![image](https://github.com/user-attachments/assets/0b32a851-2738-4cb6-8291-7d2355525d12)
+
+
+### State
+
+To investigate churn rate in State based on Intl plan, i created pivot table and sorted by decreasing.The graph displays the most churn occured in California.
+
+![image](https://github.com/user-attachments/assets/6abba57f-9caa-42a8-aaf2-432d164b0e4b)
+
+
+## Dashboard
+
+In the end of investigation, i created dashboard using Excel.
+
+
+
+
+
+
+
+
+
+
 
 
 
