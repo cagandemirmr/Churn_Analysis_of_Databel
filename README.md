@@ -1,148 +1,109 @@
-![image](https://github.com/user-attachments/assets/12d4362d-b9ef-4f82-a3ac-3569e2dccc05)
+![image](https://github.com/user-attachments/assets/274b5eec-d43c-4ad8-b65c-493e2f4b6f8e)
 
+# Churn Analysis of Databel
 
-# Churn_Analysis_of_Databel
-Databel is fictional data provider.
-My task is to analyze why customers are churning.
+Databel is a fictional data provider, and this project focuses on analyzing the reasons behind customer churn.
 
 ## About the Dataset
 
-Dataset contains 29 variables(columns) and 6687 Observations(rows).
+The dataset contains 29 variables (columns) and 6,687 observations (rows).
 
-### In terms of Customer Status:
+### Customer Status
 
-Customer ID: The unique ID that identifies a customer.
+- **Customer ID**: Unique identifier for each customer.
+- **Churn Label**: Indicates whether a customer churned ("Yes" or "No").
+- **Churn Category**: Groups multiple churn reasons for analysis.
+- **Churn Reason**: The specific reason why a customer ended their contract.
 
-Churn Label: Contains “Yes” or “No” to indicate if a customer churned.
+### Demographics
 
-Churn Category: Groups multiple churn reasons together for analysis purposes.
+- **Gender**: The gender of the customer ("Male", "Female", or "Prefer not to say").
+- **Age**: The age of the customer.
+- **Under 30**: Indicates if the customer is under 30 ("Yes" or "No").
+- **Senior**: Indicates if the customer is above 65 ("Yes" or "No").
 
-Churn Reason:  The particular reason why the customer ended the contract. 
+### Contact Information
 
-### In terms of Demographics:
+- **Contract Type**: Type of contract ("Month to Month", "One Year", or "Two Year").
+- **Payment Method**: Preferred payment method ("Credit Card", "Direct Debit", or "Paper Check").
+- **State**: The state code where the customer resides.
+- **Phone Number**: The customer's phone number.
+- **Group**: Indicates if the customer is part of a group contract ("Yes" or "No").
+- **Number of Customers in a Group**: The number of customers in the group.
 
-Gender: The gender of the customer, indicated by “Male”, “Female”  
-or “Prefer not to say”.
+### Subscription Types and Charges
 
-Age: The age of the customer.
+- **Account Length (in months)**: The number of months the customer has been with Databel.
+- **Local Calls**: The amount of local calls (within the US) made by the customer.
+- **Local Mins**: The number of minutes spent on local calls.
+- **Intl Calls**: The amount of international calls made by the customer.
+- **Intl Mins**: The number of minutes spent on international calls.
+- **Intl Active**: Indicates if the customer made international calls ("Yes" or "No").
+- **Intl Plan**: Indicates if the customer has a premium international calling plan ("Yes" or "No").
+- **Extra International Charges**: Additional charges for international calls for customers not on a plan.
+- **Customer Service Calls**: The number of calls made to customer service.
+- **Avg Monthly GB Download**: Average monthly download volume in gigabytes.
+- **Unlimited Data Plan**: Indicates if the customer has an unlimited data plan ("Yes" or "No").
+- **Extra Data Charges**: Additional charges for data downloads for customers without an unlimited plan.
+- **Device Protection & Online Backup**: Indicates if the customer has paid for device protection and backup ("Yes" or "No").
+- **Monthly Charges**: The average monthly charges for the customer.
+- **Total Charges**: The total sum of all monthly charges.
 
-Under 30: Indicates if the customer is under 30 with “Yes” or “No”.
+## Data Preparation
 
-Senior: Indicates if the customer is above 65 with “Yes” or “No”.
+### Initial Data Check
 
-### In terms of Contact Informations:
+- All variables were checked for correct data types and duplicates. No duplicates were found.
+- The main dataset was copied to a new worksheet named "Aggregate" for further analysis.
 
-Contract Type: Contains “Month to Month”, “One Year” or “Two Year”.
+### Churn Rate Calculation
 
-Payment Method: Preferred payment method of the customer indicated
-with “Credit Card”, “Direct Debit” or “Paper Check”.
+- A new column named "Churned" was created based on the "Churn Label" column, where "Yes" was converted to 1 and "No" to 0 using the `IF` function in Excel.
+- Churn rate was calculated by dividing the sum of churned customers by the total number of customers, resulting in a churn rate of 26.86%.
 
-State: The code of the state where the customer lives.
+![Churn Rate Calculation](https://github.com/user-attachments/assets/ae7885cc-1e73-46e9-99be-94f085279493)
 
-Phone Number: Phone number of the customer.
+### Analyzing Churn Reasons
 
-Group: Indicates if the customer is part of a group contract. A group
-contract offers advantages and is generally cheaper.
-Contains “Yes” or “No”.
+- A pivot table was created from the "Customer" worksheet to analyze churn reasons by summing the "Churned" values for each reason.
 
-Number of customers in a group: Number of customers part of the group.
-
-### Subscription Types and Charges:
-
-Account Length (in months): The number of months the customer has been with
-Databel.
-
-Local Calls: Amount of local (within the US) calls from the customer.
-
-Local Mins:The number of minutes spent calling locally.
-
-Intl Calls:Amount of international (outside the US) calls from
-the customer.
-
-Intl Mins:The number of minutes spent calling internationally.
-
-Intl Active: Indicates if the customer called internationally with a “Yes” or “No”.
-
-Intl Active: Indicates if the customer called internationally with
-a “Yes” or “No”.
-
-Intl Plan: Indicates if the customer has a premium plan to call internationally for free with “Yes” or “No. This
-premium is reflected in the amount of the monthly charge.
-
-Extra International Charges: Contains the extra charges for international calls
-for customers who are not on an international plan.
-
-Customer Service Calls: The number of calls made to customer service. 
-
-Avg Monthly GB Download: Contains the average monthly download volume in
-gigabytes.
-
-Unlimited Data Plan: Indicates if the customer has free unlimited download capacity with “Yes” or “No”. This premium
-is reflected in the amount of the monthly charge.
-
-Extra Data Charges: Contains the extra charges for data downloads for customers who are not on an unlimited plan.
-
-Device Protection  & Online Backup: Indicates if the customer has paid for device
-protection and backup with Yes or No .
-
-Monthly Charges: Average of all Monthly Charges to the customer.
-
-Total Charges: Sum of all monthly charges.
-
-## Data Preperation
-
-In first phase, i controlled all variables in term of variable types and chech for duplicates. In the end of this process it has no Duplicates.
-Therefore, i copy main table to new worksheed that is called "Aggregate".
-
-To ease my process and calculate all churned customers, i create new variable(columns) called "Churned" based on Churn Label by IF function in Excel from "Yes" to 1 and "No" to 0 values.
-![image](https://github.com/user-attachments/assets/19281bc8-049e-4934-8a49-5b1b684ac95f)
-IF function is "EĞER" in Turkish.
-
-
-### Churn Rate
-To find churn rate first i count all customers in first column, in second column i sum all churned value from "Churned" column.Lastly, i divide second column to first column.The result is 26.86%
-
-![image](https://github.com/user-attachments/assets/ae7885cc-1e73-46e9-99be-94f085279493)
-
-
-
-### Churn Reason
-In terms of investigating churn reasons, pivot table from Customer Worksheet is created.As a row Churn reason and as a value sum of "Churned" are choosed.
-
-![image](https://github.com/user-attachments/assets/fb86184f-fe5c-4255-8e6f-9534f96c48e8)
+![Churn Reason Analysis](https://github.com/user-attachments/assets/fb86184f-fe5c-4255-8e6f-9534f96c48e8)
 
 ### Churn Competitor Preferences
 
-In order to find why customers choose other companies, Competitor analysis is made and only top 4 reasons is choosed which are better devices,beter offer,higher download data and offered more data.
-![image](https://github.com/user-attachments/assets/26e7d250-92cb-4f78-9b59-496d849d66ea)
+- A competitor analysis was conducted to identify the top 4 reasons customers preferred other companies: better devices, better offers, higher download data, and more data offered.
 
-### Examining Churn Pattern
+![Competitor Preferences](https://github.com/user-attachments/assets/26e7d250-92cb-4f78-9b59-496d849d66ea)
 
-Next, to make investigation one step further, i examine consumption of data based on Data plan by using pivot table.
+### Examining Churn Patterns
 
-![image](https://github.com/user-attachments/assets/a42ba6c6-b18e-405a-a803-6d713d0afcb7)
+- Data consumption patterns were examined based on the data plan using a pivot table.
 
-### Age 
+![Data Consumption Patterns](https://github.com/user-attachments/assets/a42ba6c6-b18e-405a-a803-6d713d0afcb7)
 
-In age,first of all i create new column by 3 categories base on their age. If someone's age below 30, ıt is labelled as "Under 30",above 65 is labelled as "Senior" and between 30 and 65 Labelled as "Other" in Demographics column in Aggregate worksheet. I use If function to create labels.In the end, pivot table indicates that most of churn occures in "Senior".
+### Age Analysis
 
-![image](https://github.com/user-attachments/assets/f8b746cb-8941-48bf-b6a8-60a82bede22c)
-![image](https://github.com/user-attachments/assets/6cc48751-2cfd-49b0-84e0-1e5d4dcaa051)
+- A new column categorizing customers into "Under 30", "Senior", and "Other" based on their age was created using the `IF` function.
+- A pivot table indicated that most churn occurs among "Senior" customers.
+- Further analysis grouped customers by age ranges of 10 years, revealing the highest churn rate in the 79-88 years old range.
 
-Based on first information, i grooped ages by 10 years range by using pivot table.In the end, pivot table showed the most churned age range is 79-88 years old.
-![image](https://github.com/user-attachments/assets/0b32a851-2738-4cb6-8291-7d2355525d12)
+![Age Analysis](https://github.com/user-attachments/assets/f8b746cb-8941-48bf-b6a8-60a82bede22c)
+![Age Range Analysis](https://github.com/user-attachments/assets/0b32a851-2738-4cb6-8291-7d2355525d12)
 
+### State Analysis
 
-### State
+- Churn rates by state were analyzed based on the international plan, with California showing the highest churn.
 
-To investigate churn rate in State based on Intl plan, i created pivot table and sorted by decreasing.The graph displays the most churn occured in California.
-
-![image](https://github.com/user-attachments/assets/6abba57f-9caa-42a8-aaf2-432d164b0e4b)
-
+![State Analysis](https://github.com/user-attachments/assets/6abba57f-9caa-42a8-aaf2-432d164b0e4b)
 
 ## Dashboard
 
-In the end of investigation, i created dashboard using Excel.
+- A comprehensive dashboard was created in Excel summarizing the findings from the analysis.
+
+---
+
+This project aimed to provide insights into customer churn patterns at Databel. The results can help guide strategies to reduce churn and improve customer retention.
+
 
 
 
