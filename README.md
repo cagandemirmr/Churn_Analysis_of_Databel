@@ -1,4 +1,5 @@
-![image](https://github.com/user-attachments/assets/d57a85f2-21f4-43ff-8b37-52358f9213c8)
+![image](https://github.com/user-attachments/assets/12d4362d-b9ef-4f82-a3ac-3569e2dccc05)
+
 
 # Churn_Analysis_of_Databel
 Databel is fictional data provider.
@@ -87,5 +88,45 @@ protection and backup with Yes or No .
 Monthly Charges: Average of all Monthly Charges to the customer.
 
 Total Charges: Sum of all monthly charges.
+
+## Data Preperation
+
+In first phase, i controlled all variables in term of variable types and chech for duplicates. In the end of this process it has no Duplicates.
+Therefore, i copy main table to new worksheed that is called "Aggregate".
+
+To ease my process and calculate all churned customers, i create new variable(columns) called "Churned" based on Churn Label by IF function in Excel from "Yes" to 1 and "No" to 0 values.
+![image](https://github.com/user-attachments/assets/19281bc8-049e-4934-8a49-5b1b684ac95f)
+IF function is "EĞER" in Turkish.
+
+
+### Churn Rate
+To find churn rate first i count all customers in first column, in second column i sum all churned value from "Churned" column.Lastly, i divide second column to first column.The result is 26.86%
+
+![image](https://github.com/user-attachments/assets/ae7885cc-1e73-46e9-99be-94f085279493)
+
+
+
+### Churn Reason
+In terms of investigating churn reasons, pivot table from Customer Worksheet is created.As a row Churn reason and as a value sum of "Churned" are choosed.
+
+![image](https://github.com/user-attachments/assets/fb86184f-fe5c-4255-8e6f-9534f96c48e8)
+
+### Churn Competitor Preferences
+
+In order to find why customers choose other companies, Competitor analysis is made and only top 4 reasons is choosed.
+![image](https://github.com/user-attachments/assets/26e7d250-92cb-4f78-9b59-496d849d66ea)
+
+## Examining Churn Pattern
+
+## Consumption Data Based on Data Plan
+
+Next, to make investigation one step further, i examine consumption of data based on Data plan by using pivot table.
+
+![image](https://github.com/user-attachments/assets/a42ba6c6-b18e-405a-a803-6d713d0afcb7)
+
+## Age 
+
+Also,I investigate age 
+
 
 
