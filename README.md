@@ -174,7 +174,19 @@ Compared to other segments, this group downloaded approximately three times more
 
 This project aimed to provide insights into customer churn patterns at Databel. The results can help guide strategies to reduce churn and improve customer retention.
 
+# CONCLUSION
 
+Based on these insights, the company can reduce the overall churn rate by offering 2-year contract agreements instead of monthly plans. Another potential strategy is to introduce group contracts, targeting families of three or more members, which could also help lower churn rates.
+
+Additionally, the company could organize training programs for its personnel to improve customer interaction and address behavioral issues. Offering newer and higher-quality devices may also contribute to customer retention.
+
+From a demographic perspective:
+
+For customers over the age of 30 and non-citizens, the company can offer modern devices bundled with 2-year contracts and ensure they have access to more competent sales and customer service teams.
+
+For senior customers (citizens), the company could provide affordable domestic and international call packages, tailored to their usage patterns.
+
+For customers under the age of 30, the focus could be on offering cost-effective internet and domestic call packages, which align with their typical usage behavior.
 
 
 
