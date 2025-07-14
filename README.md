@@ -96,9 +96,79 @@ The dataset contains 29 variables (columns) and 6,687 observations (rows).
 
 ![State Analysis](https://github.com/user-attachments/assets/6abba57f-9caa-42a8-aaf2-432d164b0e4b)
 
+### Tenure and Demographics of Churned Customers
+
+I decided to conduct an in-depth analysis at Databel, starting with identifying the commercial age (Tenure) of our customers. Initially, I calculated customer tenure by subtracting the monthly fee from the annual fee to estimate how long they had been using the service. This calculation was performed on both monthly and yearly bases. If a customer had not completed one year, their Tenure was set to 0; otherwise, the total duration was divided by 12 to compute their Tenure in years.
+
+<img width="870" height="284" alt="image" src="https://github.com/user-attachments/assets/82a02e56-71d0-499c-9aa6-c3ee96cdee49" />
+
+
+According to the annual Tenure calculations, nearly half of the customers who had not completed one year ended up churning. However, after the second year, churn rates gradually decreased and continued to decline until the seventh year.
+
+
+
+
+When analyzing the distribution, we observed that 34% of customers left before completing their first year. This group is followed by those who completed their 3rd year, 6th year, 2.5 years, and 4th year. The primary reasons for customer churn were competitor offers, negative customer experiences (attitudes), and dissatisfaction.
+
+Most of the churned customers were non-citizens over the age of 30. This suggests that communication strategies and customer experience touchpoints may need to be re-evaluated. Among those who didn’t complete a full year, the majority were again non-citizens and over 30 years old. The data also shows that 73% of those who didn’t complete one year and 62% of those who completed their 6th year churned.
+
+<img width="728" height="639" alt="image" src="https://github.com/user-attachments/assets/9f370cec-94d4-40fa-86b0-57c57ae5e281" />
+
+<img width="785" height="308" alt="image" src="https://github.com/user-attachments/assets/4d8beace-2c2d-4a16-8930-67f5d789260f" />
+
+The main reasons non-citizens over 30 left the service were better offers from competitors, dissatisfaction, and negative experiences with staff. Within this group, the leading complaint was that competitors provided better devices. Most of these customers used debit cards for payments and contacted customer service more frequently than the average. This might indicate that they experienced more problems and didn’t receive adequate support, particularly related to billing or technical issues.
+
+<img width="788" height="450" alt="image" src="https://github.com/user-attachments/assets/362a1518-b5cc-47ef-9898-7bb86e83794a" />
+
+
+This group also had the highest churn rate among those on monthly contracts. Their usage data shows that they often lacked a dedicated support team to solve their issues, and their primary needs were related to internet data packages.
+
+**Two-Year Tenure and Churn Reasons**
+
+For customers with two years of tenure, the top reason for churn was competitors, followed by negative attitudes and dissatisfaction. Based on these insights, if Databel addresses internal personnel issues, offers competitive internet packages, and provides new devices, it could significantly improve satisfaction among non-citizens and customers over 30.
+
+### Senior Segment (Citizens) Analysis
+
+<img width="801" height="43" alt="image" src="https://github.com/user-attachments/assets/43ac583c-093e-44ff-a33e-d24212012840" />
+<img width="894" height="758" alt="image" src="https://github.com/user-attachments/assets/0efbe47e-fd78-426c-91fb-c53927fef580" />
+
+Among senior customers (citizens), the churn rate was 38%. Interestingly, churned customers in this segment spent approximately 20% more than those who remained. The top churn reason was again competitors, followed by the company's attitude. Most complaints in this group were related to better offers from other providers.
+
+<img width="795" height="467" alt="image" src="https://github.com/user-attachments/assets/fcdb4567-bc8c-409c-a7e1-12560f28304b" />
+<img width="796" height="309" alt="image" src="https://github.com/user-attachments/assets/7bb9eecd-bd6a-4af2-bc64-a611f5531ff3" />
+
+
+A deeper analysis revealed that the core problems stemmed from the behavior of customer service and sales representatives, as well as the company's pricing policies. The most churned customers were those with monthly contracts. Moreover, customers who were involved in more than one group or plan were less likely to churn.
+
+<img width="1481" height="42" alt="image" src="https://github.com/user-attachments/assets/570c521f-bb74-4fd2-8bf8-73361ea69b4e" />
+
+
+In this segment, churned customers had higher average local and international call minutes than other demographics. This group also had the highest churn rate overall.
+
+### Customers Under 30
+
+<img width="1240" height="47" alt="image" src="https://github.com/user-attachments/assets/885415e6-cf3a-4d6d-ad96-a5dbebedf9f5" />
+<img width="969" height="140" alt="image" src="https://github.com/user-attachments/assets/c91f5da5-2c87-4b20-a2d8-9abbee2b2982" />
+
+The segment with the lowest churn rate consisted of customers under 30 years old. Within this group, the average age of churned users was around 25. Those who left the service in their second year had the highest average extra data usage, while those who left in their sixth year had the highest spending costs.
+
+<img width="1715" height="40" alt="image" src="https://github.com/user-attachments/assets/a8e317e4-756f-49e0-afd2-467dde9d4006" />
+
+Compared to other segments, this group downloaded approximately three times more data. It also ranked second, after the senior segment, in terms of average local call duration.
+
+
+
 ## Dashboard
 
 - A comprehensive dashboard was created in Excel summarizing the findings from the analysis.
+
+<img width="1792" height="590" alt="image" src="https://github.com/user-attachments/assets/9c6a1db6-5308-4585-a107-c3e37f79ff3e" />
+
+<img width="1483" height="507" alt="image" src="https://github.com/user-attachments/assets/2086d4cb-c294-4f20-8341-c29addc40c8a" />
+
+<img width="1704" height="603" alt="image" src="https://github.com/user-attachments/assets/4e25d7db-b24c-4edb-b253-761cbfa956b8" />
+
+<img width="1528" height="510" alt="image" src="https://github.com/user-attachments/assets/a3e856f0-df7c-44eb-bfa5-1da5526574d3" />
 
 ---
 
